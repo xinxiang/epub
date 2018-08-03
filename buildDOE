@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm doe/doe.epub
+cd doe
+zip -0Xq doe.epub mimetype
+zip -Xr9Dq doe.epub *
+cd ..
+java -jar epubcheck/epubcheck.jar doe/doe.epub 

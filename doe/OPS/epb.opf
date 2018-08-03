@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:ibooks="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="3.0" prefix="ibooks: http://www.idpf.org/2007/opf" xmlns="http://www.idpf.org/2007/opf">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>Dictionary of Old English</dc:title>
+<dc:creator id="creator">The Dictionary of Old English Project</dc:creator>
+<meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+<dc:contributor id="contributor">Pages v5.6.2</dc:contributor>
+<meta refines="#contributor" property="role" scheme="marc:relators">bkp</meta>
+<dc:date>2018-07-19</dc:date>
+<dc:subject>Language Studies</dc:subject>
+<dc:identifier id="BookId">DOE-AE0C6077-CFE8-4194-93BC-832130D511F4</dc:identifier>
+<dc:language>en</dc:language>
+<meta property="dcterms:modified">2018-07-19T13:56:15Z</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+<item id="cover" href="dict/help/cover.xhtml" media-type="application/xhtml+xml"/>
+<item id="cover-image" href="images/wyrm.png" media-type="image/png"/>
+<item id="doe-cover-image" href="dict/images/large-wyrm.png" media-type="image/png"/>
+<item id="stylesheet" href="css/book.css" media-type="text/css"/>
+<item id="doe-stylesheet" href="dict/css/doe.css" media-type="text/css"/>
+<item id="ncx" href="epb.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="E00010" href="dict/entries/00/E00010.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00011" href="dict/entries/00/E00011.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00012" href="dict/entries/00/E00012.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00013" href="dict/entries/00/E00013.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00014" href="dict/entries/00/E00014.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00015" href="dict/entries/00/E00015.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00016" href="dict/entries/00/E00016.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00017" href="dict/entries/00/E00017.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00018" href="dict/entries/00/E00018.xhtml"  media-type="application/xhtml+xml"/>
+<item id="E00019" href="dict/entries/00/E00019.xhtml"  media-type="application/xhtml+xml"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="cover" linear="yes"/>
+<itemref idref="E00010" linear="yes"/>
+<itemref idref="E00011" linear="yes"/>
+<itemref idref="E00012" linear="yes"/>
+<itemref idref="E00013" linear="yes"/>
+<itemref idref="E00014" linear="yes"/>
+<itemref idref="E00015" linear="yes"/>
+<itemref idref="E00016" linear="yes"/>
+<itemref idref="E00017" linear="yes"/>
+<itemref idref="E00018" linear="yes"/>
+<itemref idref="E00019" linear="yes"/>
+</spine>
+<guide>
+<reference type="text" title="Dictionary of Old English" href="dict/help/cover.xhtml"/>
+</guide>
+</package>
