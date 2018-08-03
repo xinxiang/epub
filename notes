@@ -1,0 +1,30 @@
+Some commands that I used to manipulate the HTML files:
+
+* replace the <html>
+
+perl -pi -e "s/<html>/<html xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">/" E*.xhtml
+
+* Add the <?xml line before html
+perl -pi -e "s/^<html/<\?xml version=\"1.0\" encoding=\"UTF-8\"\?>
+\n<html/" E*.xhtml
+
+
+* on Mac (non-GNU), insert line <!DOCTYPE ...> with sed has to be written in 3 lines as below. (Didn't use this line)
+
+sed -i '' -e '1i\
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+' E*.xhtml
+
+* on Mac, delete the first
+sed -i '' -e '1d' E*.xhtml
+
+* Add a link after head
+perl -pi -e "s/^<head>$/<head>\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"..\/css\/doe.css\" \/>/" E*.xhtml
+
+* add lang attribute to html
+perl -pi -e "s/^<html/<html xml:lang=\"en\"/" E*.xhtml
+
+* delete the meta lines:
+
+sed -i '' -e '/^<meta/d' E*.xhtml
+
